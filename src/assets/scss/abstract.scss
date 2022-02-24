@@ -1,0 +1,19 @@
+@import "variables";
+
+%canBlink{
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+
+	@keyframes blink {
+		0% {
+			background-color: transparent;
+		}
+		50% {
+			background-color: $backgroundColorNav;
+		}
+		100% {
+			background-color: transparent;
+		}
+	}
+}

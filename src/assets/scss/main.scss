@@ -1,0 +1,21 @@
+@import "normalize";
+
+.ui-nested-title {
+	max-width: 264px;
+	min-width: 264px;
+	width: 100%;
+	height: 34px;
+	@include flexCent;
+	gap: 4px;
+
+	color: $colorBlack;
+	padding: 4px;
+
+	background-color: white;
+	border: 1px solid $colorGrey;
+	border-radius: $borderRadius;
+
+	@include hasParent('.isDisable') {
+		color: $color-back-grey;
+	}
+}
